@@ -1,6 +1,6 @@
 package animal;
 
-public class Animal {
+public abstract class Animal {
     public int age;
     public String name;
 
@@ -10,16 +10,13 @@ public class Animal {
         System.out.println("An animal has been created.");
     }
 
-    public void eat () {
-        System.out.println("An animal is eating.");
-    }
+    public abstract void eat ();
 
     public static void main(String[] args) {
-        Animal a = new Animal(1, "Ted");
         Dog cruz = new Dog(3, "Cruz");
         Cat maow = new Cat(1, "Maow");
         cruz.bark();
+        cruz.eat();
         maow.meow();
-        a.eat();
     }
 }

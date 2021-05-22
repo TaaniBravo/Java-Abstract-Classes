@@ -7,6 +7,10 @@ public class Cat extends Animal {
         System.out.println("A cat has entered the room.");
     }
 
+    public void eat() {
+        System.out.println(this.name + " is eating.");
+    }
+
     public void meow() {
         System.out.println("Meow Meow");
     }
